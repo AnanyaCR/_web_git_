@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweet Shop</title>
   <link rel="stylesheet" href="SEWE.CSS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
 </head>
 <body>
   <header>
@@ -14,11 +20,15 @@
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          <a href="#caramel">Caramel</a>
+          <a href="#nutella">Nutella</a>
+          <!-- Add more product links as needed -->
+        </div>
+      </li>
       <li><a href="#contact">Contact</a></li>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     </ul>
   </nav>
   
@@ -27,19 +37,20 @@
     <p>Welcome to our sweet shop! We offer a wide variety of delicious candies, chocolates, and other treats to satisfy your sweet tooth.</p>
   </section>
   
-  <section id="products">
-    <h2>Our Products</h2>
+  <section id="caramel">
+    <h2>Caramel</h2>
     <div class="product">
       <img src="caramel.jpg" alt="Caramel">
-      <h3>Caramel</h3>
       <p>Sweet and salty</p>
     </div>
+  </section>
+
+  <section id="nutella">
+    <h2>Nutella</h2>
     <div class="product">
       <img src="nutell.jpg" alt="Nutella">
-      <h3>Nutella</h3>
       <p>Chocolatey</p>
     </div>
-    <!-- Add more products as needed -->
   </section>
   
   <section id="contact">
@@ -52,5 +63,9 @@
   <footer>
     <p>&copy; 2024 Sweet Shop. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Add JavaScript if necessary
+  </script>
 </body>
 </html>
